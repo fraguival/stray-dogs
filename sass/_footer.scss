@@ -1,0 +1,38 @@
+.footer {
+    background-color: $first;
+    margin-bottom: 24px; 
+    padding: 24px;
+    border-radius: 4px;
+}
+.footer__content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: $second;
+    width: 80%;
+    margin: 0 auto;
+    padding: 12px;
+    border-radius: 4px;
+}
+.footer__menu {
+    display: flex;
+    flex-direction: column;
+}
+.footer .menu__link {
+    color: #444;
+}
+.footer .menu__link:hover {
+    background-color: rgba(255, 255, 255, .5);
+}
+.footer [class*="icon-"]::before {
+    position: relative;
+    top: 2px;
+    right: 8px;
+}
+.footer__social {
+    font-size: 28px;
+    cursor: pointer;
+}
+.footer__social:hover {
+    color: #0081b4;
+}

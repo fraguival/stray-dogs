@@ -1,0 +1,94 @@
+.main {
+        display: flex;
+        gap: 1%;
+        margin-bottom: 12px;
+}
+.articles {
+        background-color: $second;
+        color: #444;
+        padding: 12px;
+        border-radius: 4px;
+}
+.article {
+        position: relative;
+}
+.article__title {
+        font-weight: 500;
+        margin: 12px 0;
+}
+.article__time {
+        display: flex;
+        gap: 24px;
+        justify-content: center;
+        background-color: $first;
+        color: $light;
+        margin-bottom: 12px;
+        padding: 12px 0;
+        border-radius: 4px;
+}
+.time__numberDay {
+        order: 1;
+}
+.article__text {
+        line-height: 1.2;
+        padding: 12px 0;
+}
+.article__btn {
+        display: inline-block;
+        background-color: rgba(0, 0, 0, .5);
+        color: $light;
+        margin-bottom: 36px;
+        padding: 8px 12px;
+        border-radius: 4px;
+}
+.sidebar {
+        display: none;
+        background-color: $third;
+        color: #000;
+        padding: 12px;
+        border-radius: 4px;
+}
+.sidebar__one, .sidebar__two {
+        background-color: $light;
+        color: #444;
+        margin-bottom: 36px;
+        padding: 12px;
+        border: 2px solid;
+        border-radius: 4px;
+}
+.sidebar__one {
+        margin-top: 40px;
+}
+.sidebar__title {
+        font-size: 24px;
+        font-weight: 500;
+        margin-bottom: 24px;
+        text-align: justify;
+}
+.sidebar__text {
+        line-height: 1.5;
+        text-align: justify;
+}
+@media (min-width:768px) {
+        .articles {
+                width: 69%
+        }
+        .article__time {
+                position: absolute;
+                top: 42px;
+                left: -10px;
+                flex-direction: column;
+                align-items: center;
+                gap: 0;
+                width: 60px;
+                box-shadow: 5px 5px 10px $first;
+        }
+        .time__numberDay {
+                order: 0;
+                font-size: 32px;
+        }
+        .sidebar {
+                display: block;
+                width: 30%;
+        }
+}

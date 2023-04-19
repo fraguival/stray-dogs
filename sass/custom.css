@@ -1,0 +1,266 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #abb;
+  font-family: "Barlow Condensed", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  width: 100%;
+  border-radius: 4px;
+}
+
+.container {
+  max-width: 1280px;
+  width: 96%;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #4e6c50;
+  margin-bottom: 12px;
+  padding: 12px;
+  border-radius: 4px;
+}
+
+.header__logo {
+  color: #dedede;
+  font-size: 32px;
+  font-weight: 500;
+}
+
+.icon-menu {
+  display: block;
+  color: #dedede;
+  width: 40px;
+  height: 40px;
+  font-size: 24px;
+  line-height: 40px;
+  text-align: center;
+  cursor: pointer;
+  border: 2px solid;
+  border-radius: 4px;
+}
+
+.menu {
+  position: absolute;
+  top: 86px;
+  right: 62px;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #4e6c50;
+  height: 0;
+  padding: 0 12px;
+  overflow: hidden;
+  border-radius: 4px;
+  transition: height 0.5s linear;
+}
+
+.menu__link {
+  color: #dedede;
+  padding: 12px 16px;
+}
+
+.menu [class*=icon-]::before {
+  position: relative;
+  top: 2px;
+  right: 8px;
+}
+
+.menu__link:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+}
+
+.mostrar {
+  height: 174px;
+}
+
+.social {
+  color: #dedede;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.social:hover {
+  color: #0081b4;
+}
+
+@media (min-width: 768px) {
+  .icon-menu {
+    display: none;
+  }
+  .menu {
+    position: static;
+    flex-direction: row;
+    width: auto;
+    height: auto;
+  }
+}
+.main {
+  display: flex;
+  gap: 1%;
+  margin-bottom: 12px;
+}
+
+.articles {
+  background-color: #f0a04b;
+  color: #444;
+  padding: 12px;
+  border-radius: 4px;
+}
+
+.article {
+  position: relative;
+}
+
+.article__title {
+  font-weight: 500;
+  margin: 12px 0;
+}
+
+.article__time {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  background-color: #4e6c50;
+  color: #dedede;
+  margin-bottom: 12px;
+  padding: 12px 0;
+  border-radius: 4px;
+}
+
+.time__numberDay {
+  order: 1;
+}
+
+.article__text {
+  line-height: 1.2;
+  padding: 12px 0;
+}
+
+.article__btn {
+  display: inline-block;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #dedede;
+  margin-bottom: 36px;
+  padding: 8px 12px;
+  border-radius: 4px;
+}
+
+.sidebar {
+  display: none;
+  background-color: #b05a7a;
+  color: #000;
+  padding: 12px;
+  border-radius: 4px;
+}
+
+.sidebar__one, .sidebar__two {
+  background-color: #dedede;
+  color: #444;
+  margin-bottom: 36px;
+  padding: 12px;
+  border: 2px solid;
+  border-radius: 4px;
+}
+
+.sidebar__one {
+  margin-top: 40px;
+}
+
+.sidebar__title {
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 24px;
+  text-align: justify;
+}
+
+.sidebar__text {
+  line-height: 1.5;
+  text-align: justify;
+}
+
+@media (min-width: 768px) {
+  .articles {
+    width: 69%;
+  }
+  .article__time {
+    position: absolute;
+    top: 42px;
+    left: -10px;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+    width: 60px;
+    box-shadow: 5px 5px 10px #4e6c50;
+  }
+  .time__numberDay {
+    order: 0;
+    font-size: 32px;
+  }
+  .sidebar {
+    display: block;
+    width: 30%;
+  }
+}
+.footer {
+  background-color: #4e6c50;
+  margin-bottom: 24px;
+  padding: 24px;
+  border-radius: 4px;
+}
+
+.footer__content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #f0a04b;
+  width: 80%;
+  margin: 0 auto;
+  padding: 12px;
+  border-radius: 4px;
+}
+
+.footer__menu {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer .menu__link {
+  color: #444;
+}
+
+.footer .menu__link:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.footer [class*=icon-]::before {
+  position: relative;
+  top: 2px;
+  right: 8px;
+}
+
+.footer__social {
+  font-size: 28px;
+  cursor: pointer;
+}
+
+.footer__social:hover {
+  color: #0081b4;
+}/*# sourceMappingURL=custom.css.map */

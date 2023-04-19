@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;500&display=swap');
+
+$first: #4e6c50;
+$second: #f0a04b;
+$third: #b05a7a;
+$light: #dedede;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #abb;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+a {
+    text-decoration: none;
+}
+img {
+    display: block;
+    width: 100%;
+    border-radius: 4px;
+}
+.container {
+    max-width: 1280px;
+    width: 96%;
+    margin: 0 auto;
+}
